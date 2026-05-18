@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, MessageSquare, Sparkles, Languages, Database, Check, Zap, Mail, Shield, User, Bot } from "lucide-react";
+import { ArrowRight, MessageSquare, Sparkles, Languages, Database, Check, Zap, Mail, Shield, User, Bot, Send } from "lucide-react";
 import heroImg from "../assets/hero.png";
 
 export const Landing = () => {
