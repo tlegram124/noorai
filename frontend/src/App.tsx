@@ -5,9 +5,10 @@ import { Orders } from "./pages/Orders";
 import { Landing } from "./pages/Landing";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import { Settings as SettingsPage } from "./pages/Settings";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "./contexts/LanguageContext";
-import { LayoutDashboard, MessageSquare, ShoppingCart, Settings } from "lucide-react";
+import { LayoutDashboard, MessageSquare, ShoppingCart, Settings, LogOut } from "lucide-react";
 
 const SidebarLink = ({ to, icon: Icon, children }: { to: string, icon: any, children: React.ReactNode }) => {
   const location = useLocation();
@@ -56,6 +57,7 @@ const DashboardLayout = () => {
           <SidebarLink to="/dashboard" icon={LayoutDashboard}>{t('dashboard')}</SidebarLink>
           <SidebarLink to="/dashboard/conversations" icon={MessageSquare}>{t('conversations')}</SidebarLink>
           <SidebarLink to="/dashboard/orders" icon={ShoppingCart}>{t('orders')}</SidebarLink>
+          <SidebarLink to="/dashboard/settings" icon={Settings}>{t('settings')}</SidebarLink>
         </nav>
 
         <div className="p-6 border-t dark:border-gray-800 mt-auto space-y-4">
@@ -63,7 +65,7 @@ const DashboardLayout = () => {
              onClick={handleLogout}
              className="flex items-center gap-3 p-3 text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 rounded-lg cursor-pointer transition-colors"
            >
-             <Settings size={20} />
+             <LogOut size={20} />
              <span>Sign Out</span>
            </div>
            <select 
@@ -99,6 +101,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="conversations" element={<Conversations />} />
           <Route path="orders" element={<Orders />} />
+          <Route path="settings" element={<SettingsPage />} />
         </Route>
       </Routes>
     </Router>
