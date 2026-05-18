@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, MessageSquare, Sparkles, Languages, Database, Check } from "lucide-react";
+import { ArrowRight, MessageSquare, Sparkles, Languages, Database, Check, Zap } from "lucide-react";
 import heroImg from "../assets/hero.png";
 
 export const Landing = () => {
@@ -201,6 +201,135 @@ export const Landing = () => {
             <a href="mailto:sales@wasla.ai" className="mt-8 w-full py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-center font-medium transition-colors">
               Contact Sales
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Innovation Roadmap Section */}
+      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-900 relative bg-slate-950">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-gradient-to-tr from-blue-500/5 to-emerald-500/5 rounded-full blur-[80px] pointer-events-none" />
+        
+        <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/5 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+            Future Horizon
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">How Wasla AI Can Improve</h2>
+          <p className="text-slate-400 text-lg">Continuous innovation to deliver the absolute best e-commerce support suite.</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Item 1 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <MessageSquare size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-blue-400 transition-colors">Omnichannel Outreach</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Add seamless **email and SMS** sync alongside WhatsApp to manage all customer queries in one inbox.
+            </p>
+          </div>
+
+          {/* Item 2 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Zap size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-purple-400 transition-colors">Enterprise Syncs</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Native custom integrations with **HubSpot and Salesforce** to enrich records for mid-market and larger clients.
+            </p>
+          </div>
+
+          {/* Item 3 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Check size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-emerald-400 transition-colors">Pay-As-You-Go pricing</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Flexible and highly affordable **pay-as-you-go** structures optimized for lean, early-stage startups.
+            </p>
+          </div>
+
+          {/* Item 4 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Database size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-blue-400 transition-colors">Deep Platform Integrations</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Deep native sync with **Shopify and WooCommerce** to automate checkouts, cart recovery, and stock updates.
+            </p>
+          </div>
+
+          {/* Item 5 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Languages size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-emerald-400 transition-colors">Official WhatsApp Partner</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Official **WhatsApp Business API partner** certification to guarantee the lowest messaging latency and verified green checkmarks.
+            </p>
+          </div>
+
+          {/* Item 6 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Sparkles size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-purple-400 transition-colors">Drag-and-Drop Workflows</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Visual **drag-and-drop AI workflows** allowing non-technical managers to edit prompt guidelines instantly.
+            </p>
+          </div>
+
+          {/* Item 7 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Zap size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-emerald-400 transition-colors">Unified Support + Marketing</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Combine **support and retention marketing** inside a single platform to run broadcast newsletters alongside queries.
+            </p>
+          </div>
+
+          {/* Item 8 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <MessageSquare size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-blue-400 transition-colors">1-Click API Onboarding</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              A frictionless **1-click WhatsApp Business API onboarding** to link accounts in seconds without leaving Wasla.
+            </p>
+          </div>
+
+          {/* Item 9 */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200">
+              <Sparkles size={20} />
+            </div>
+            <h3 className="text-lg font-bold group-hover:text-purple-400 transition-colors">AI + Human Hybrid Synergy</h3>
+            <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+              Intelligent **AI + human hybrid support** handoff that auto-notifies agents only when escalations are detected.
+            </p>
+          </div>
+
+          {/* Item 10 (Centered Spanning) */}
+          <div className="p-6 rounded-2xl border border-slate-900 hover:border-slate-800 bg-slate-900/10 hover:bg-slate-900/30 transition-all duration-300 md:col-span-2 lg:col-span-3 group">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-500 to-emerald-500 text-white flex items-center justify-center flex-shrink-0 group-hover:rotate-6 transition-transform duration-200">
+                <Sparkles size={20} />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold group-hover:text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 transition-colors">AI-Powered No-Code Bot Builder</h3>
+                <p className="text-slate-400 text-sm mt-1 leading-relaxed">
+                  Design complex interaction flows dynamically. Prompt our **AI-powered no-code builder** in natural language, and let the system automatically compile and register the state machines for you.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
