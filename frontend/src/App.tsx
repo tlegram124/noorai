@@ -6,6 +6,7 @@ import { Landing } from "./pages/Landing";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Settings as SettingsPage } from "./pages/Settings";
+import { Onboarding } from "./pages/Onboarding";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "./contexts/LanguageContext";
 import { LayoutDashboard, MessageSquare, ShoppingCart, Settings, LogOut } from "lucide-react";
@@ -95,6 +96,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/onboarding" element={<Onboarding />} />
         
         {/* Main Dashboard Layout */}
         <Route path="/dashboard" element={<DashboardLayout />}>
